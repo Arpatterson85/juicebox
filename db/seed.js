@@ -45,6 +45,7 @@ async function createTables() {
     try {
       console.log ('Starting to create users...');
       const albert = await createUser ({username: 'albert', password: 'bertie99'});
+      const albertTwo = await createUser({ username: 'albert', password: 'imposter_albert' });
       console.log (albert);
       console.log ('Finished creating users!');
     } catch (error) {
